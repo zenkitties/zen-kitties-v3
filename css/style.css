@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
+body {
+  position: relative;
+  background: url(../img/cat-background.png) center center no-repeat;
+  background-color: white;
+  background-size: 100% auto;
+  background-position: 0 80px;
+  font-size: 12pt;
+  min-height: 700px; }
+
+.row {
+  margin-right: 0; }
+
+aside {
+  position: relative;
+  margin: 0 0 0 0; }
+  aside .social-media-bar {
+    position: absolute;
+    left: -255px;
+    transition: all 600ms ease; }
+  aside .social-expand {
+    left: -50px; }
+  aside ul li {
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    margin-right: 5px;
+    padding: 8px 0;
+    border-radius: 25px;
+    transition: all 250ms ease-in-out; }
+    aside ul li a {
+      color: white;
+      transition: all 250ms ease-in-out; }
+    aside ul li a:hover {
+      color: #333333; }
+    aside ul li .fa-google-plus {
+      padding: 0 10px; }
+    aside ul li .fa-angle-right {
+      padding: 0 16px; }
+    aside ul li .fa-facebook {
+      padding: 0 15px; }
+    aside ul li .fa-twitter {
+      padding: 0 12px; }
+    aside ul li .fa-github {
+      padding: 0 12px; }
+  aside ul li:hover {
+    color: #333333;
+    background-color: white; }
+
+.kittens {
+  background: url("/../../portfolio/img/big_ol_kitty.png") no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 350px; }
+
+.zen-kitty-menu-items > ul {
+  padding: 40px 10px 0 10px; }
+  .zen-kitty-menu-items > ul :last-child {
+    border-right: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none; }
+  .zen-kitty-menu-items > ul li {
+    border-right: 1px solid #b3b3b3;
+    text-transform: uppercase;
+    box-shadow: 1px 0 #e6e6e6;
+    -webkit-box-shadow: 1px 0 #e6e6e6;
+    -moz-box-shadow: 1px 0 #e6e6e6; }
+    .zen-kitty-menu-items > ul li a {
+      color: #333333 !important;
+      padding: 10px 25px;
+      transition: all 250ms ease; }
+    .zen-kitty-menu-items > ul li a:hover {
+      color: #6699cc !important;
+      border-bottom: 3px solid #6699cc; }
+
+.zen-borders {
+  border-bottom: 8px solid #6699cc;
+  box-shadow: 0 2px #5b91c8;
+  -webkit-box-shadow: 0 2px #5b91c8;
+  -moz-box-shadow: 0 2px #5b91c8; }
+
+.row.zen-kitty-footer {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.zen-kitty-footer {
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  border-top: 5px solid #538cc6;
+  height: 30px;
+  width: 100%;
+  box-shadow: inset 0 2px 10px -2px #333333; }

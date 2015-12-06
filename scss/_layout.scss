@@ -1,0 +1,15 @@
+// Layout Style Area
+
+body {
+    position: relative;
+    background: url(../img/cat-background.png) center center no-repeat;
+    background-color: $background-color;
+    background-size: 100% auto;
+    background-position: 0 80px;
+    font-size: $default-font-size;
+    min-height: 700px;
+}
+
+.row {
+    margin-right: 0;
+}

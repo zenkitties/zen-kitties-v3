@@ -1,0 +1,61 @@
+// Aside Styles
+
+aside {
+    position: relative;
+    margin: 0 0 0 0;
+    
+    .social-media-bar {
+        position: absolute;
+        left: -255px;
+        transition: all 600ms ease;
+    }
+    
+    .social-expand {
+        left: -50px;
+    }
+    
+    ul li {
+        display: inline-block;
+        color: $white;
+        border: 1px solid $white;
+        margin-right: 5px;
+        padding: 8px 0;
+        border-radius: 25px;
+        transition: all 250ms ease-in-out;
+        
+        a {
+            color: $white;
+            transition: all 250ms ease-in-out;
+        }
+        
+        a:hover {
+            color: $second-color;
+        }
+        
+        .fa-google-plus {
+            padding: 0 10px;
+        }
+        
+        .fa-angle-right {
+            padding: 0 16px;
+        }
+        
+        .fa-facebook {
+            padding: 0 15px;
+        }
+        
+        .fa-twitter {
+            padding: 0 12px;
+        }
+        
+        .fa-github {
+            padding: 0 12px;
+        }
+    }
+    
+    ul li:hover {
+        color: $second-color;
+        background-color: $white;
+    }
+    
+}
