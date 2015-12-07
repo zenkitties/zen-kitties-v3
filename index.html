@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="zenApp">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,7 @@
                 <div id="navbar" class="zen-kitty-menu-items navbar-collapse collapse pull-right">
                     <ul class="nav navbar-nav">
                       <li><a href="#">Home</a></li>
-                      <li><a href="#">About</a></li>
+                      <li><a href="#/about">About</a></li>
                       <li><a href="#">Work</a></li>
                       <li><a href="#">Contact</a></li>
                     </ul>
@@ -51,6 +51,7 @@
         <div class="container-fluid">
             <div class="col-md-3">
                <aside class="zen-kitty-side-bar">
+                 <!-- social media bar on the upper left corner -->
                   <ul class="social-media-bar">
                       <li><a href="https://plus.google.com/u/0/109614161319186969298" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                       <li><a href="https://github.com/zenkitties" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -58,11 +59,10 @@
                       <li><a href="https://twitter.com/zenbrewmaster" target="_blank"><i class="fa fa-twitter"></i></a></li>
                       <li><i class="fa fa-angle-right"></i></li>
                   </ul>
-                   
+                   <button><a href="documents/nickResume.pdf">Download Resume</a></button>
                </aside>
             </div><!--/.zen-kitty-side-bar -->
-            <div class="col-md-6 zen-kitty-content">
-                
+            <div class="col-md-8 zen-kitty-content ng-view">
             </div><!--/.zen-kitty-content -->
         </div><!--/.container-fluid -->   
     </div><!--/.row -->
@@ -70,7 +70,7 @@
     <!-- Footer content area -->
     <div class="row zen-kitty-footer">
         <div class="container-fluid">
-            
+            <div id="back-to-top"><a href="#"><i class="fa fa-chevron-up"></i></a></div>
         </div>
     </div>
         
@@ -81,10 +81,12 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <!-- Angular JS -->
     <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"</script>
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Custom Scripts -->
-    <script src="js/app.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/states.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

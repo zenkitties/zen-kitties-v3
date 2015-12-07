@@ -1,0 +1,35 @@
+// Back To Top Styles
+
+#back-to-top {
+    position: fixed;
+    visibility: hidden;
+    bottom: 25px;
+    right: 20px;
+    border: 1px solid $second-color;
+    border-radius: 40px;
+    padding: 13px 16px;
+    transition: all 250ms ease-in-out;
+    
+    a {
+        color: $second-color;
+    }
+}
+
+#back-to-top:hover {
+    background-color: darken($default-color, 10%);
+    
+    a {
+        color: $white;
+    }
+}
+
+.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible !important;
+  opacity: .75;
+}
+
+.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .50;
+}

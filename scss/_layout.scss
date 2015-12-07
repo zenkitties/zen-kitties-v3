@@ -8,6 +8,17 @@ body {
     background-position: 0 80px;
     font-size: $default-font-size;
     min-height: 700px;
+    color: $second-color;
+    
+    a {
+        color: $default-color;
+        transition: all 250ms ease-in-out;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: darken($default-color, 30%);
+    }
 }
 
 .row {

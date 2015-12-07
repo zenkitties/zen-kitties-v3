@@ -1,1 +1,22 @@
 // Button styles and all those shenanigans
+
+button {
+    background-color: lighten($default-color, 10%);
+    border: 2px solid darken($default-color, 15%);
+    padding: 10px 15px;
+    transition: all 250ms ease-in-out;
+    
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+button:hover {
+    background-color: darken($default-color, 10%);
+    
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}

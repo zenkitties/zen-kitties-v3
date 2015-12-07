@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
+#about-me-image {
+  width: 95%;
+  height: 95%; }
+
 body {
   position: relative;
   background: url(../img/cat-background.png) center center no-repeat;
@@ -6,10 +10,21 @@ body {
   background-size: 100% auto;
   background-position: 0 80px;
   font-size: 12pt;
-  min-height: 700px; }
+  min-height: 700px;
+  color: #333333; }
+  body a {
+    color: #6699cc;
+    transition: all 250ms ease-in-out; }
+  body a:hover {
+    text-decoration: none;
+    color: #264d73; }
 
 .row {
   margin-right: 0; }
+
+.zen-kitty-side-bar > button {
+  margin-top: 100px;
+  margin-left: 20px; }
 
 aside {
   position: relative;
@@ -55,6 +70,21 @@ aside {
   -o-background-size: cover;
   height: 350px; }
 
+button {
+  background-color: #8cb3d9;
+  border: 2px solid #3973ac;
+  padding: 10px 15px;
+  transition: all 250ms ease-in-out; }
+  button a {
+    color: white;
+    text-decoration: none; }
+
+button:hover {
+  background-color: #4080bf; }
+  button:hover a {
+    color: white;
+    text-decoration: none; }
+
 .zen-kitty-menu-items > ul {
   padding: 40px 10px 0 10px; }
   .zen-kitty-menu-items > ul :last-child {
@@ -81,6 +111,38 @@ aside {
   box-shadow: 0 2px #5b91c8;
   -webkit-box-shadow: 0 2px #5b91c8;
   -moz-box-shadow: 0 2px #5b91c8; }
+
+.zen-kitty-content {
+  font-size: 16px;
+  margin-top: 400px;
+  margin-bottom: 50px;
+  line-height: 40px; }
+
+#back-to-top {
+  position: fixed;
+  visibility: hidden;
+  bottom: 25px;
+  right: 20px;
+  border: 1px solid #333333;
+  border-radius: 40px;
+  padding: 13px 16px;
+  transition: all 250ms ease-in-out; }
+  #back-to-top a {
+    color: #333333; }
+
+#back-to-top:hover {
+  background-color: #4080bf; }
+  #back-to-top:hover a {
+    color: white; }
+
+.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible !important;
+  opacity: .75; }
+
+.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .50; }
 
 .row.zen-kitty-footer {
   margin-right: 0px;
