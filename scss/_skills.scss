@@ -1,0 +1,13 @@
+// Skills styles for the about-me page
+
+.zen-skills {
+    article {
+  -webkit-columns: 2 200px;
+     -moz-columns: 2 200px;
+          columns: 2 200px;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+    }
+
+}

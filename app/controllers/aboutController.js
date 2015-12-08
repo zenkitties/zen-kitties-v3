@@ -1,7 +1,7 @@
 (function(angular) {
     "use strict";
 
-var app = angular.module('zenApp',['ngRoute']);
+    var app = angular.module('zenApp',[]);
     
     app.controller('AboutController', ['$scope', function($scope) {
         $scope.about = {

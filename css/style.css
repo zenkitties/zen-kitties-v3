@@ -144,6 +144,14 @@ button:hover {
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   opacity: .50; }
 
+.zen-skills article {
+  -webkit-columns: 2 200px;
+  -moz-columns: 2 200px;
+  columns: 2 200px;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em; }
+
 .row.zen-kitty-footer {
   margin-right: 0px;
   margin-left: 0px; }

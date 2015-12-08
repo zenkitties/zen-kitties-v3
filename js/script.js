@@ -6,7 +6,10 @@ jQuery(document).ready(function($){
     //duration of the top scrolling animation (in ms)
         scroll_top_duration = 700,
     //grab the "back to top" link
-        $back_to_top = $('#back-to-top');
+        $back_to_top = $('#back-to-top'),
+    
+    //grab the "ng-view" link
+        $zen_kitty_menu = $('.zen-kitty-menu-items'); 
 
     //hide or show the "back to top" link
     $(window).scroll(function(){
@@ -29,4 +32,12 @@ jQuery(document).ready(function($){
     $(".fa-angle-right").click(function(){
         $(".social-media-bar").toggleClass("social-expand")
     });
+    
+    //scrolling down to the ng-view on click
+    $zen_kitty_menu.on('click', function(event){
+        $('body,html').delay(250).animate({
+                scrollTop: $('.ng-view').offset().top
+            }, scroll_top_duration);
+    });
+    
 });
