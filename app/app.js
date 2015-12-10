@@ -11,7 +11,7 @@ var app = angular.module('zenApp',['ngRoute']);
             birthday: 'February 12th, 1987',
             position: 'Freelance Web Developer',
             img: '/img/about-me.png',
-            github_img: '/zen-kitties-v3/img/about_me.png',
+            github_img: 'zen-kitties-v3/img/about-me.png',
             skills: 
                 [
                     'Javascript',
