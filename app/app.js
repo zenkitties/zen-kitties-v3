@@ -10,7 +10,7 @@ var app = angular.module('zenApp',['ngRoute']);
             current_residence: 'Fresno, CA',
             birthday: 'February 12th, 1987',
             position: 'Freelance Web Developer',
-            img: '../img/about-me.png',
+            img: '/img/about-me.png',
             skills: 
                 [
                     'Javascript',
