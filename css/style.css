@@ -1,4 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
+.skills-animation-active {
+  transition: all 1s ease-in;
+  display: display; }
+
+.skills-animation-inactive {
+  display: none; }
+
+.animate-enter,
+.animate-leave {
+  -webkit-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -moz-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -ms-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -o-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap; }
+
+.animate-leave.animate-leave-active,
+.animate-enter {
+  opacity: 0;
+  width: 0px;
+  height: 0px; }
+
+.animate-enter.animate-enter-active,
+.animate-leave {
+  opacity: 1;
+  width: 150px;
+  height: 30px; }
+
 #about-me-image {
   width: 95%;
   height: 95%; }
@@ -162,10 +194,6 @@ button:hover {
   -moz-column-gap: 1em;
   column-gap: 1em; }
 
-.zen-skills .skills-list {
-  visibility: visible;
-  transition: all 3s ease-in; }
-
 .zen-kitties-contact-form {
   position: absolute;
   index: 30;
@@ -179,13 +207,33 @@ button:hover {
   -webkit-box-shadow: 0 2px 10px -2px #333333;
   box-shadow: 0 2px 10px -2px #333333; }
 
-.zen-invisible {
-  visibility: visible;
-  transition: all 1s ease-out; }
-
 .contact-animation {
-  index: 20px;
+  transition: all 1s ease-in-out;
   top: 150px; }
+
+.contact-animation-out {
+  top: -450px; }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background: url(../img/cat-background-mini.png) center center no-repeat;
+    background-position: 0 125px;
+    background-size: 100% auto; }
+  #about-me-image {
+    width: 80%;
+    float: left; }
+  .zen-kitty-content {
+    margin-top: 50px;
+    margin-left: 15px; }
+  .brand-logo {
+    width: 100%; }
+  .zen-kitty-menu-items > ul li {
+    border-right: none;
+    box-shadow: none;
+    display: block;
+    text-align: center; }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: 0; } }
 
 .row.zen-kitty-footer {
   margin-right: 0px;

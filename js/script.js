@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
     //grab the contact form class
         $zen_contact_form = $('#zen-contact'),
     //remove class for contact form
-        zen_form = $('.zen-kitties-contact-form'),
+        $zen_form = $('.zen-kitties-contact-form'),
     //targetting the contact class for contact form removal
         $remove_contact = $('.remove-contact');
 
@@ -48,7 +48,7 @@ jQuery(document).ready(function($){
     
     //this should scroll the contact form down into place
     $zen_contact_form.on('click', function(event){
-        $('.zen-kitties-contact-form').addClass('contact-animation')
+        $('.zen-kitties-contact-form').removeClass('contact-animation-out').addClass('contact-animation')
     });
     //this removes the class .contact-animation from the contact directive
     //which forces it to ascend into the heavens above.

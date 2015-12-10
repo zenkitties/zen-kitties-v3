@@ -20,15 +20,15 @@
 </head>
 <body>
    <div class="wrapper">
-   <zen-form></zen-form>
+   <zen-form class="hidden-xs"></zen-form>
    <!-- Static navbar -->
         <div class="row">
           <nav class="navbar navbar-default">
             <div class="container-fluid zen-borders">
-                <div class="col-xs-12 col-md-6">
-                    <a href="#"><img src="img/brand-log.png" /></a>
+                <div class="col-xs-12 col-md-5">
+                    <a href="#"><img class="brand-logo" src="img/brand-log.png" /></a>
                 </div>
-                <div class="col-xs-12 col-md-offset-1 col-md-5">
+                <div class="col-xs-12 col-md-offset-1 col-md-6">
                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
@@ -38,6 +38,7 @@
                         <ul class="nav navbar-nav">
                           <li class="remove-contact"><a href="#">Home</a></li>
                           <li><a class="remove-contact" href="#/about">About</a></li>
+                          <li><a class="remove-contact" href="#/blog">Blogs</a></li>
                           <li class="remove-contact"><a href="#">Work</a></li>
                           <li><a id="zen-contact" href="#">Contact</a></li>
                         </ul>
@@ -63,7 +64,7 @@
                        <button><a href="documents/nickResume.pdf" target="_blank">Download Resume</a></button>
                    </aside>
                 </div><!--/.zen-kitty-side-bar -->
-                <div class="col-md-8 zen-kitty-content ng-view"> 
+                <div class="col-xs-12 col-md-8 zen-kitty-content ng-view"> 
                 </div><!--/.zen-kitty-content -->
             </div><!--/.container-fluid -->   
         </div><!--/.row -->

@@ -7,7 +7,7 @@
         
      $routeProvider
         .when('/', {
-              URL: '#'     
+              URL: '/'     
               })
      
         .when('/about', {
