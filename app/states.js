@@ -14,6 +14,10 @@
                templateUrl: 'app/views/about-me.html'
                })
      
+        .when('/contact', {
+               templateUrl: 'app/views/contact-form.html'
+               })
+     
         .otherwise ({ redirectTo: '/' });
         
          })

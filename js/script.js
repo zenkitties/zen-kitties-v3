@@ -9,7 +9,13 @@ jQuery(document).ready(function($){
         $back_to_top = $('#back-to-top'),
     
     //grab the "ng-view" link
-        $zen_kitty_menu = $('.zen-kitty-menu-items'); 
+        $zen_kitty_menu = $('.zen-kitty-menu-items'),
+    //grab the contact form class
+        $zen_contact_form = $('#zen-contact'),
+    //remove class for contact form
+        zen_form = $('.zen-kitties-contact-form'),
+    //targetting the contact class for contact form removal
+        $remove_contact = $('.remove-contact');
 
     //hide or show the "back to top" link
     $(window).scroll(function(){
@@ -34,10 +40,22 @@ jQuery(document).ready(function($){
     });
     
     //scrolling down to the ng-view on click
-    $zen_kitty_menu.on('click', function(event){
-        $('body,html').delay(250).animate({
-                scrollTop: $('.ng-view').offset().top
-            }, scroll_top_duration);
+//    $zen_kitty_menu.on('click', function(event){
+//        $('body,html').animate({
+//                scrollTop: $('.ng-view').offset().top
+//            }, scroll_top_duration);
+//    });
+    
+    //this should scroll the contact form down into place
+    $zen_contact_form.on('click', function(event){
+        $('.zen-kitties-contact-form').addClass('contact-animation')
     });
+    //this removes the class .contact-animation from the contact directive
+    //which forces it to ascend into the heavens above.
+    $remove_contact.on('click', function(event){
+        $('.zen-kitties-contact-form').removeClass('contact-animation')
+    });
+    
+    
     
 });

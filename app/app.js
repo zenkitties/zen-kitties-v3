@@ -39,4 +39,11 @@ var app = angular.module('zenApp',['ngRoute']);
         }
     }]);
     
+    app.directive('zenForm', function(){
+        return {
+            restrict: 'E',
+            templateUrl: 'app/views/contact-form.html'
+        }
+    });
+    
 })(window.angular);

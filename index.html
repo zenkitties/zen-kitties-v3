@@ -19,61 +19,62 @@
     
 </head>
 <body>
-   
+   <div class="wrapper">
+   <zen-form></zen-form>
    <!-- Static navbar -->
-    <div class="row">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid zen-borders">
-            <div class="col-xs-12 col-md-6">
-                <a href="#"><img src="img/brand-log.png" /></a>
+        <div class="row">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid zen-borders">
+                <div class="col-xs-12 col-md-6">
+                    <a href="#"><img src="img/brand-log.png" /></a>
+                </div>
+                <div class="col-xs-12 col-md-offset-1 col-md-5">
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <div id="navbar" class="zen-kitty-menu-items navbar-collapse collapse pull-right">
+                        <ul class="nav navbar-nav">
+                          <li class="remove-contact"><a href="#">Home</a></li>
+                          <li><a class="remove-contact" href="#/about">About</a></li>
+                          <li class="remove-contact"><a href="#">Work</a></li>
+                          <li><a id="zen-contact" href="#">Contact</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->  
+                </div><!--/.col-4 -->
+            </div><!--/.container-fluid -->
+          </nav><!--/.nav -->
+        </div><!--/.row -->
+
+        <!-- Main content area -->
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-md-3">
+                   <aside class="zen-kitty-side-bar">
+                     <!-- social media bar on the upper left corner -->
+                      <ul class="social-media-bar">
+                          <li><a href="https://plus.google.com/u/0/109614161319186969298" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                          <li><a href="https://github.com/zenkitties" target="_blank"><i class="fa fa-github"></i></a></li>
+                          <li><a href="https://www.facebook.com/barefootphilosopher" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="https://twitter.com/zenbrewmaster" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                          <li><i class="fa fa-angle-right"></i></li>
+                      </ul>
+                       <button><a href="documents/nickResume.pdf" target="_blank">Download Resume</a></button>
+                   </aside>
+                </div><!--/.zen-kitty-side-bar -->
+                <div class="col-md-8 zen-kitty-content ng-view"> 
+                </div><!--/.zen-kitty-content -->
+            </div><!--/.container-fluid -->   
+        </div><!--/.row -->
+
+        <!-- Footer content area -->
+        <div class="row zen-kitty-footer">
+            <div class="container-fluid">
+                <div id="back-to-top"><a href="#"><i class="fa fa-chevron-up"></i></a></div>
             </div>
-            <div class="col-xs-12 col-md-offset-1 col-md-5">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <div id="navbar" class="zen-kitty-menu-items navbar-collapse collapse pull-right">
-                    <ul class="nav navbar-nav">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#/about">About</a></li>
-                      <li><a href="#">Work</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->  
-            </div><!--/.col-4 -->
-        </div><!--/.container-fluid -->
-      </nav><!--/.nav -->
-    </div><!--/.row -->
-       
-    <!-- Main content area -->
-    <div class="row">
-        <div class="container-fluid">
-            <div class="col-md-3">
-               <aside class="zen-kitty-side-bar">
-                 <!-- social media bar on the upper left corner -->
-                  <ul class="social-media-bar">
-                      <li><a href="https://plus.google.com/u/0/109614161319186969298" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                      <li><a href="https://github.com/zenkitties" target="_blank"><i class="fa fa-github"></i></a></li>
-                      <li><a href="https://www.facebook.com/barefootphilosopher" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="https://twitter.com/zenbrewmaster" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                      <li><i class="fa fa-angle-right"></i></li>
-                  </ul>
-                   <button><a href="documents/nickResume.pdf" target="_blank">Download Resume</a></button>
-               </aside>
-            </div><!--/.zen-kitty-side-bar -->
-            <div class="col-md-8 zen-kitty-content ng-view">
-            </div><!--/.zen-kitty-content -->
-        </div><!--/.container-fluid -->   
-    </div><!--/.row -->
-       
-    <!-- Footer content area -->
-    <div class="row zen-kitty-footer">
-        <div class="container-fluid">
-            <div id="back-to-top"><a href="#"><i class="fa fa-chevron-up"></i></a></div>
         </div>
-    </div>
-        
+    </div><!--/.wrapper --> 
         
     
     
@@ -82,6 +83,7 @@
     <!-- Angular JS -->
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"</script>
+    <script src="js/angular-animate.min.js"></script>
     <!-- Custom Angular JS scripts -->
     <!--<script src="app/controllers/aboutController.js"></script>-->
     <!-- Bootstrap -->

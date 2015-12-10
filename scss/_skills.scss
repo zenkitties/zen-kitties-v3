@@ -9,5 +9,10 @@
      -moz-column-gap: 1em;
           column-gap: 1em;
     }
+    
+    .skills-list {
+        visibility: visible;
+        transition: all 3s ease-in;
+    }
 
 }

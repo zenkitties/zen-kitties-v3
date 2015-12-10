@@ -20,3 +20,15 @@ button:hover {
         text-decoration: none;
     }
 }
+
+.btn-zen {
+    color: $white;
+    background-color: lighten($default-color, 10%);
+    border: 1px solid darken($default-color, 15%);
+}
+
+.btn-zen:hover {
+    color: $white;
+    background-color: darken($default-color, 10%);
+    border-color: darken($default-color, 15%);
+}

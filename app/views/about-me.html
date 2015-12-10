@@ -2,17 +2,17 @@
 <h1>About Me</h1>
 <div class="row" ng-controller="AboutController">
   <div class="col-md-5">
-      <img id="about-me-image" src="img/about-me.png" />
+      <img id="about-me-image" src="{{ about.img }}" />
   </div><!--/.col-md-5 -->
   <div class="col-md-7">
-      <p>My name is Nick Myers, and I am a 28 year old web developer based out of Fresno, CA. We are
+      <p>My name is {{ about.name }}, and I am a {{ about.age }} year old web developer based out of {{ about.current_residence }}. We are
       currently in process of going through a technology transformation due to <a href="http://bitwiseindustries.com/" target="_blank">Bitwise Industries</a>, bringing Fresno's tech scene to the forefront. I have had the pleasure of doing work with Bitwise as being a part of their first ever <a href="http://geekwiseacademy.com/cohort" target="_blank">Cohort program</a> which allowed me to work on a team of eight specially selected individuals out of the thousands that have taken Geekwise Academies courses. The Cohort One (or Cohort Prime as we call it) got to work on real client work with local companies and show off our skills, and gain new ones!</p>
       <p>It was a wonderful experience that I learned a lot from and such an honor. Now I am a freelance web developer excited about using my skills to help other companies reap the benefits of what I've learned. There are a number of skills that I've learned that if you would like to see, you could <a id="#skills" ng-click="showme = !showme">simply click here to reveal them below.</a></p>
       
       <div class="zen-skills">
          <article>
              <ul>
-                <li ng-show="showme" ng-repeat="skill in about.skills">{{ skill }}</li> 
+                <li class="skills-list" ng-show="showme" ng-repeat="skill in about.skills" ng-animate=" 'animate' ">{{ skill }}</li> 
              </ul>
          </article>
          <hr />
