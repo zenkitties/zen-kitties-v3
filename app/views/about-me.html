@@ -2,7 +2,7 @@
 <h1>About Me</h1>
 <div class="row" ng-controller="AboutController">
   <div class="col-md-5">
-      <img id="about-me-image" src="{{ about.img }}" />
+      <img id="about-me-image" ng-src="{{ about.img }}" />
   </div><!--/.col-md-5 -->
   <div class="col-md-7">
       <p>My name is {{ about.name }}, and I am a {{ about.age }} year old web developer based out of {{ about.current_residence }}. We are
