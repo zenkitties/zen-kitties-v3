@@ -2,7 +2,7 @@
     <h1>Blogs</h1>
     <div class="zen-blog-container col-md-12" ng-repeat="site in sites">
         <div class="col-md-4">
-            <img ng-src="{{ site.pic }}" />
+            <img class="blog-images" ng-src="{{ site.pic }}" />
             <button><a href="{{ site.website_url }}" target="_blank">Visit This Site</a></button>
         </div>
         <div class="col-md-8">

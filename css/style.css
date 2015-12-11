@@ -106,7 +106,6 @@ aside {
 button {
   background-color: #8cb3d9;
   border: 2px solid #3973ac;
-  margin-top: 10px;
   padding: 10px 15px;
   transition: all 250ms ease-in-out; }
   button a {
@@ -161,6 +160,11 @@ button:hover {
   margin-top: 400px;
   margin-bottom: 50px;
   line-height: 40px; }
+
+nav {
+  box-shadow: 0px 5px 10px 1px #333333;
+  -webkit-box-shadow: 0px 5px 10px 1px #333333;
+  -moz-box-shadow: 0px 5px 10px 1px #333333; }
 
 #back-to-top {
   position: fixed;
@@ -242,10 +246,12 @@ button:hover {
     border: 0; }
   .zen-kitties-contact-form {
     left: 2px;
-    top: 325px; } }
+    top: 325px; }
+  .zen-blog-container {
+    padding: 10px 0; } }
 
 .zen-blog-container {
-  padding: 20px;
+  padding: 15px 0;
   font-size: 12pt;
   line-height: 25px;
   background-color: white;
@@ -260,6 +266,12 @@ button:hover {
   -webkit-box-shadow: 0 2px 10px -2px #6699cc;
   -moz-box-shadow: 0 2px 10px -2px #6699cc; }
 
+.blog-images {
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 12px -3px #333333;
+  -webkit-box-shadow: 3px 3px 12px -3px #333333;
+  -moz-box-shadow: 3px 3px 12px -3px #333333; }
+
 .row.zen-kitty-footer {
   margin-right: 0px;
   margin-left: 0px; }
@@ -271,4 +283,6 @@ button:hover {
   border-top: 5px solid #538cc6;
   height: 30px;
   width: 100%;
-  box-shadow: inset 0 2px 10px -2px #333333; }
+  box-shadow: 0 -2px 10px -2px #333333;
+  -webkit-box-shadow: 0 -2px 10px -2px #333333;
+  -moz-box-shadow: 0 -2px 10px -2px #333333; }
