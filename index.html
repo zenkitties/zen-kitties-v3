@@ -9,19 +9,18 @@
     <meta name="author" content="Nick Myers">
     <link rel="icon" href="">
     <title>Zen Kitties v3 - Where Zen Kitties Make Websites</title>
-    
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome core CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    
 </head>
 <body>
-   <div class="wrapper">
-   <zen-form class="hidden-xs"></zen-form>
-   <!-- Static navbar -->
+   
+    <div class="wrapper">
+        <zen-form class="hidden-xs"></zen-form>
+        <!-- Static navbar -->
         <div class="row">
           <nav class="navbar navbar-default">
             <div class="container-fluid zen-borders">
@@ -51,14 +50,14 @@
         <!-- Main content area -->
         <div class="row">
             <div class="container-fluid">
-                <div class="col-md-3">
+               <div class="col-md-3">
                    <aside class="zen-kitty-side-bar">
                      <!-- social media bar on the upper left corner -->
-                      <ul class="social-media-bar">
-                          <li><a href="https://plus.google.com/u/0/109614161319186969298" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                          <li><a href="https://github.com/zenkitties" target="_blank"><i class="fa fa-github"></i></a></li>
-                          <li><a href="https://www.facebook.com/barefootphilosopher" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                          <li><a href="https://twitter.com/zenbrewmaster" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                      <ul class="social-media-bar" ng-controller="SocialController">
+                          <li><a href="{{ social.google }}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                          <li><a href="{{ social.github }}" target="_blank"><i class="fa fa-github"></i></a></li>
+                          <li><a href="{{ social.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="{{ social.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
                           <li><i class="fa fa-angle-right"></i></li>
                       </ul>
                        <button><a href="documents/nickResume.pdf" target="_blank">Download Resume</a></button>
@@ -77,21 +76,17 @@
         </div>
     </div><!--/.wrapper --> 
         
-    
-    
     <!-- jQuery -->
     <script src="js/jquery-1.11.3.min.js"></script>
     <!-- Angular JS -->
     <script src="js/angular.min.js"></script>
-    <script src="js/angular-route.min.js"</script>
-    <script src="js/angular-animate.min.js"></script>
-    <!-- Custom Angular JS scripts -->
-    <!--<script src="app/controllers/aboutController.js"></script>-->
+    <script src="js/angular-route.min.js"</script><!--/Added routing -->
+    <script src="js/angular-animate.min.js"></script><!--/Added animations -->
     <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script><!--/Added bootstraps -->
     <!-- Custom Scripts -->
-    <script src="app/app.js"></script>
-    <script src="app/states.js"></script>
-    <script src="js/script.js"></script>
+    <script src="app/app.js"></script><!--/ Angulars native app.js with all controllers and directives (for now)-->
+    <script src="app/states.js"></script><!--/ Angular routing states -->
+    <script src="js/script.js"></script><!--/ My custom jQuery scripts -->
 </body>
 </html>

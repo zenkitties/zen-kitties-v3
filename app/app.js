@@ -3,6 +3,16 @@
 
 var app = angular.module('zenApp',['ngRoute']);
     
+    app.controller('SocialController',['$scope', function($scope){
+        $scope.social = {
+            facebook: 'https://www.facebook.com/barefootphilosopher',
+            twitter: 'https://twitter.com/zenbrewmaster',
+            instagram: '',
+            google: 'https://plus.google.com/u/0/109614161319186969298',
+            github: 'https://github.com/zenkitties'
+        }
+    }])
+    
     app.controller('AboutController', ['$scope', function($scope) {
         $scope.about = {
             name: 'Nick Myers',
@@ -42,7 +52,6 @@ var app = angular.module('zenApp',['ngRoute']);
     
     app.directive('zenForm', function(){
         return {
-            restrict: 'E',
             templateUrl: 'app/views/contact-form.html'
         }
     });

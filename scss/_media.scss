@@ -5,6 +5,8 @@
         background: url(../img/cat-background-mini.png) center center no-repeat;
         background-position: 0 125px;
         background-size: 100% auto;
+        min-height: 650px;
+        font-size: $default-font-size;
     }
     
     #about-me-image {
@@ -15,6 +17,8 @@
     .zen-kitty-content {
         margin-top: 50px;
         margin-left: 15px;
+        font-size: $small-font;
+        line-height: $media-line-height;
     }
     
     .brand-logo {
@@ -33,6 +37,11 @@
     
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border: 0;
+    }
+    
+    .zen-kitties-contact-form {
+        left: 2px;
+        top: 325px;
     }
     
 }

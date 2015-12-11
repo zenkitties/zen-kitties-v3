@@ -218,13 +218,17 @@ button:hover {
   body {
     background: url(../img/cat-background-mini.png) center center no-repeat;
     background-position: 0 125px;
-    background-size: 100% auto; }
+    background-size: 100% auto;
+    min-height: 650px;
+    font-size: 12pt; }
   #about-me-image {
     width: 80%;
     float: left; }
   .zen-kitty-content {
     margin-top: 50px;
-    margin-left: 15px; }
+    margin-left: 15px;
+    font-size: 10pt;
+    line-height: 25px; }
   .brand-logo {
     width: 100%; }
   .zen-kitty-menu-items > ul li {
@@ -233,7 +237,10 @@ button:hover {
     display: block;
     text-align: center; }
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border: 0; } }
+    border: 0; }
+  .zen-kitties-contact-form {
+    left: 2px;
+    top: 325px; } }
 
 .row.zen-kitty-footer {
   margin-right: 0px;
