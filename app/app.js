@@ -11,7 +11,24 @@ var app = angular.module('zenApp',['ngRoute']);
             google: 'https://plus.google.com/u/0/109614161319186969298',
             github: 'https://github.com/zenkitties'
         }
-    }])
+    }]);
+    
+    app.controller('BlogController',['$scope', function($scope){
+        $scope.sites = [
+            {
+            pic: '/img/emotional-alchemist.png',
+            website_name: 'Art of Emotional Alchemy',
+            website_url: 'http://artofemotionalalchemy.com/',
+            description:
+                'I am very big into emotional intelligence and what it is to live a good life. So I have a site dedicated to my living philosophy of what it means to live a happy life.These are philosophies that I have picked up over the years and have incorporated them into a "living philosophy".This way of practical living that allows me to relate to others more easily.Art of Emotional Alchemy seeks to bridge the gap between the illusion divided-ness between us as human beings.It hopes to expand compassion for each other on a human to human level through our unconditional loving nature.'
+        },
+            {
+            pic: '/img/passion-flower-tea-lovers.png',
+            website_name: 'Passion Flower Tea Lovers',
+            website_url:'http://passionflowertealovers.org/',
+            description: 'Being matcha powered is pretty easy when you know what you are looking for.Passion flower tea lovers is a site dedicated to healthy living through the art of tea drinking.It has the perfect blend of articles from green teas, black teas, herbal teas, and even brewcipes to promote overall wellness.So grab a cup and brew yourself a cup of tea as you venture on to some beautifully crafted tea loving content.'
+        }
+    ]}]);
     
     app.controller('AboutController', ['$scope', function($scope) {
         $scope.about = {

@@ -3,6 +3,7 @@
 button {
     background-color: lighten($default-color, 10%);
     border: 2px solid darken($default-color, 15%);
+    margin-top: 10px;
     padding: 10px 15px;
     transition: all 250ms ease-in-out;
     

@@ -1,0 +1,19 @@
+// Blog Styles and all things bloggy
+
+.zen-blog-container {
+    padding: 20px;
+    font-size: $default-font-size;
+    line-height: $media-line-height;
+    background-color: $white;
+    margin-bottom: 20px;
+    transition: all 250ms ease;
+    box-shadow: 0  2px 10px -2px $second-color;
+    -webkit-box-shadow: 0  2px 10px -2px $second-color;
+    -moz-box-shadow: 0  2px 10px -2px $second-color;
+}
+
+.zen-blog-container:hover {
+    box-shadow: 0  2px 10px -2px $default-color;
+    -webkit-box-shadow: 0  2px 10px -2px $default-color;
+    -moz-box-shadow: 0  2px 10px -2px $default-color;
+}
