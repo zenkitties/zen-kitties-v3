@@ -67,10 +67,28 @@ var app = angular.module('zenApp',['ngRoute']);
         }
     }]);
     
-    app.directive('zenForm', function(){
-        return {
-            templateUrl: 'app/views/contact-form.html'
-        }
+    app.controller('ContactFormController',['$scope', function($scope){
+        $scope.emailAddress = 'zenfootphilosopher@gmail.com';
+            
+        $scope.submit = " ";
+        
+        $scope.clearForm = function(){
+            $scope.firstName= "",
+            $scope.lastName= "",
+            $scope.from= "",
+            $scope.subject= "",
+            $scope.comments= ""
+            
+            $scope.form = form.$pristine;
+        };
+
+    }]);
+    
+        app.directive('zenForm', function(){
+            return {
+                templateUrl: 'app/views/contact-form.html',
+                controller: 'ContactFormController'
+            }
     });
     
 })(window.angular);

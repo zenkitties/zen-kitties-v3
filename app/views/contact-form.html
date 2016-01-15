@@ -1,22 +1,26 @@
-<div class="row">
+<div class="row" ng-controller="ContactFormController">
     <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-1 zen-kitties-contact-form" ng-class="{'contact-animation-out': !seeyoulater,'contact-animation-out': seeyoulater} ">
       <h1>Contact Form</h1>
-       <form>
+       <form name="zenForm" method="POST" action="//formspree.io/zenfootphilosopher@gmail.com">
           <div class="form-group">
               <label for="firstName">First Name:</label>
-              <input type="text" class="form-control" id="first_name" placeholder="Cloud" />
+              <input name="firstName" type="text" class="form-control" id="first_name" placeholder="Cloud" required/>
           </div>
           <div class="form-group">
               <label for="lastName">Last Name:</label>
-              <input type="text" class="form-control" id="last_name" placeholder="Strife" />
+              <input name="lastName" type="text" class="form-control" id="last_name" placeholder="Strife"/>
+          </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input name="email" type="email" class="form-control" id="last_name" placeholder="cloudstrife@shinra.com" required/>
           </div>
           <div class="form-group">
               <label for="phoneNumber">Contact Number:</label>
-              <input type="number" class="form-control" id="contact_number" placeholder="(559) 555-1234" />
+              <input name="phone" type="tel" class="form-control" id="contact_number" placeholder="(559) 555-1234" />
           </div>
           <div class="form-group">
               <label for="comments">Message:</label>
-              <textarea class="form-control" id="comment_area" />
+              <textarea name="message" class="form-control" id="comment_area" required/>
           </div>
           <div class="form-group">
               <button class="btn btn-zen" id="submit_button" type="submit">Submit Message</button>
