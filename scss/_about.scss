@@ -1,6 +1,10 @@
 // About me styles
 
 #about-me-image {
+    border-radius: 50%;
     width: 95%;
     height: 95%;
+    -webkit-box-shadow: 10px 10px 42px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 42px -13px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 42px -13px rgba(0,0,0,0.75);
 }
