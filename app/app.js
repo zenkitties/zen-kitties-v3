@@ -13,6 +13,39 @@ var app = angular.module('zenApp',['ngRoute']);
         }
     }]);
     
+    app.controller('ProjectController',['$scope', function($scope){
+        $scope.projects = [
+            {
+                project_name: 'Red Wave Communications',
+                pic: '/img/projects/redwave-big.png',
+                website_url: 'http://www.redwavecomm.com',
+                desc: 'This is one of the main projects I did for the Bitwise Cohort where we got real developer training by doing work for real clients. This was my first real project working on a team of two. We created this Word Press Custom theme from the ground up based off a loose framework visual. We integrated a number of wp-plugins as well as backend PHP knowledge and loops to complete it.',
+                languages: ['PHP','HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','mySQL']
+            },
+            {
+                project_name: 'Hitting Performance Labs',
+                pic: '/img/projects/hitting-performance-lab-big.png',
+                website_url: 'http://www.hittingperformancelab.com',
+                desc: 'This project was also done using Wordpress. Although I didn\'t do the theme myself, my part in the project was to do modifications, fixes, and upkeep. Some of the things I worked on were the back-to-top button, social media buttons up top (and mobile), fixes to the newletter submit button, advertisement section on the right, and mobile friendliness.',
+                languages: ['HTML5','CSS3','SCSS','Custom Wordpress','jQuery']    
+            },
+            {
+                project_name: 'Etna Sample Site (Dev Challenge)',
+                pic: '/img/projects/etan-developer-challenge.png',
+                website_url: 'http://zenkitties.github.io/etna-sample-project/',
+                desc: 'This was a developers challenge I did for a company out of SLO. They gave me a PSD file that they wanted converted into an HTML5 project using the skills I had at hand. They gave me 4 days to complete the project for both desktop and mobile friendly versions of the site.',
+                languages: ['HTML5','CSS3','SCSS','Bootstrap','jQuery','AngularJS']    
+            },
+            {
+                project_name: 'Windermere Gardens (Dev Challenge)',
+                pic: '/img/projects/windermere-gardens-large.png',
+                website_url: 'http://zenkitties.github.io/windermere-gardens/',
+                desc: 'Another recent developers challenge put on by Edit LLC for me to do. I had 4 days to output this bad boy (mobile friendly version as well). I had to take Windermere Gardens home page which was done in WP and re-create it using my frontend web developing skills in bootstrap.',
+                languages: ['HTML5','CSS3','SCSS','Bootstrap','jQuery','AngularJS']    
+            }
+        ]
+    }]);
+    
     app.controller('BlogController',['$scope', function($scope){
         $scope.sites = [
             {

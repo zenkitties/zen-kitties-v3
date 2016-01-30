@@ -20,6 +20,9 @@
         .when('/blogs', {
                 templateUrl: 'app/views/blogs.html'
                 })
+        .when('/projects', {
+                templateUrl: 'app/views/projects.html'
+                })
      
         .otherwise ({ redirectTo: '/' });
                 
