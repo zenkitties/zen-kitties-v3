@@ -22,6 +22,10 @@ body {
     }
 }
 
+.blue {
+    color: darken($default-color, 5%);
+}
+
 
 .row {
     margin-right: 0;
