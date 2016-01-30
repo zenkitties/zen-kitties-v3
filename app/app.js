@@ -16,6 +16,7 @@ var app = angular.module('zenApp',['ngRoute']);
     app.controller('ProjectController',['$scope', function($scope){
         $scope.projects = [
             {
+                id: '01',
                 project_name: 'Red Wave Communications',
                 pic: '/img/projects/redwave-big.png',
                 website_url: 'http://www.redwavecomm.com',
@@ -23,6 +24,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['PHP','HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','mySQL']
             },
             {
+                id: '02',
                 project_name: 'Hitting Performance Labs',
                 pic: '/img/projects/hitting-performance-lab-big.png',
                 website_url: 'http://www.hittingperformancelab.com',
@@ -30,6 +32,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','SCSS','Custom Wordpress','jQuery']    
             },
             {
+                id: '03',
                 project_name: 'Etna Sample Site (Dev Challenge)',
                 pic: '/img/projects/etan-developer-challenge.png',
                 website_url: 'http://zenkitties.github.io/etna-sample-project/',
@@ -37,6 +40,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','SCSS','Bootstrap','jQuery','AngularJS']    
             },
             {
+                id: '04',
                 project_name: 'Windermere Gardens (Dev Challenge)',
                 pic: '/img/projects/windermere-gardens-large.png',
                 website_url: 'http://zenkitties.github.io/windermere-gardens/',

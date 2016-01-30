@@ -1,14 +1,14 @@
 <div class="row" ng-controller="ProjectController">
     <h1>Projects</h1>
     <div class="zen-project-container col-md-12" ng-repeat="project in projects">
-        <div class="col-md-4">
-            <img class="project-images" ng-src="{{ project.pic }}" />
+        <div class="project-image col-md-4">
+            <img id="project-{{project.id}}" class="project-images" ng-src="{{ project.pic }}" />
         </div>
-        <div class="col-md-8">
-            <a href="{{ project.website_url }}"><h3>{{ project.project_name }}</h3></a>
+        <div class="col-md-8 project-desc">
+            <a href="{{ project.website_url }}" target="_blank"><h3>{{ project.project_name }}</h3></a>
             <hr/>
             <p>{{ project.desc }}</p>
-            <p>Tags: <span ng-repeat="lang in languages">{{ project.lang }} </span></p>
+            <p>Tags: <span class="blue project-lang" ng-repeat="lang in project.languages">{{ lang }} </span></p>
         </div> 
     </div><!--/.zen-project-container--> 
 </div><!--/.row with controller -->
