@@ -3,7 +3,7 @@
     <div class="zen-project-container col-md-12" ng-repeat="project in projects">
         <div class="project-image col-md-4">
            <a href="{{ project.pic }}" data-lightbox="project-image-{{ project.id }}">
-               <img id="project-{{ project.id }}" class="project-images" ng-src="{{ project.pic }}" />
+               <img id="project-{{ project.id }}" class="project-images" ng-src="{{ project.thumb }}" />
             </a>
         </div>
         <div class="col-md-8 project-desc">
