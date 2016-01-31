@@ -2,7 +2,9 @@
     <h1>Projects</h1>
     <div class="zen-project-container col-md-12" ng-repeat="project in projects">
         <div class="project-image col-md-4">
-            <img id="project-{{project.id}}" class="project-images" ng-src="{{ project.pic }}" />
+           <a href="{{ project.pic }}" data-lightbox="project-image-{{ project.id }}">
+               <img id="project-{{ project.id }}" class="project-images" ng-src="{{ project.pic }}" />
+            </a>
         </div>
         <div class="col-md-8 project-desc">
             <a href="{{ project.website_url }}" target="_blank"><h3>{{ project.project_name }}</h3></a>
