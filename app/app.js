@@ -92,12 +92,12 @@ var app = angular.module('zenApp',['ngRoute']);
     app.controller('AboutController', ['$scope', function($scope) {
         $scope.about = {
             name: 'Nick Myers',
-            age: 28,
+            age: 29,
             current_residence: 'Fresno, CA',
             birthday: 'February 12th, 1987',
             position: 'Freelance Web Developer',
-            img: '/img/about-me.png',
-            github_img: 'zen-kitties-v3/img/about-me.png',
+            img: '/img/about-me.jpg',
+            github_img: 'zen-kitties-v3/img/about-me.jpg',
             skills: 
                 [
                     'Javascript',
