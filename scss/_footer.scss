@@ -5,7 +5,7 @@
 }
 
 .zen-kitty-footer {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     background-color: $white;
     border-top: 5px solid darken($default-color, 5%);

@@ -309,7 +309,7 @@ nav {
   margin-left: 0px; }
 
 .zen-kitty-footer {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   background-color: white;
   border-top: 5px solid #538cc6;
