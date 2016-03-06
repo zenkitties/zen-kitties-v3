@@ -30,7 +30,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 pic: '/img/projects/little-leaf-tea.jpg',
                 thumb:'/img/projects/little-leaf-tea-thumbnail.jpg',
                 website_url: 'http://www.littleleaftea.com',
-                desc: 'This was a project that was done for a friend who owns one of Fresnos best local Tea spots in town. I find myself often coming here for some peace and quiet as well as to enjoy so delicious tea blends with friends. This was a custom wordpress theme made from scratch by yours truly which I utilized PHP, Bootstrap, SCSS, CSS3 and some basic jQuery.',
+                desc: 'This was a project that was done for a friend who owns one of Fresnos best local Tea spots in town. I find myself often coming here for some peace and quiet as well as to enjoy so delicious tea blends with friends. This was a custom wordpress theme made from scratch by yours truly which I utilized PHP, Bootstrap, SCSS, CSS3 and jQuery.',
                 languages: ['PHP','HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','mySQL']
             },
             {
