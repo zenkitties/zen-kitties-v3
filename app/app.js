@@ -2,6 +2,10 @@
     "use strict";
 
 var app = angular.module('zenApp',['ngRoute']);
+	
+	app.config(['$compileProvider', function ($compileProvider) {
+  $compileProvider.debugInfoEnabled(false);
+}]);
     
     app.controller('SocialController',['$scope', function($scope){
         $scope.social = {
