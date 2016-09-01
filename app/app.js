@@ -21,6 +21,33 @@ var app = angular.module('zenApp',['ngRoute']);
         $scope.projects = [
             {
                 id: '01',
+                project_name: 'Get Hitting Results Now (Video Sales Funnel)',
+                pic: '/img/projects/getting-hitting-results-video.jpg',
+                thumb:'/img/projects/getting-hitting-results-video-thumb.jpg',
+                website_url: 'https://zenkitties.github.io/hpl_video_funnel/',
+                desc: 'This is the video sales funnel for the project below this one. This is meant to bring in traffic and send to the form. I used all of the same skills I used below including SCSS for easy variable usage utility for my CSS code. I also used bootstrap for framework/mobile friendliness. This is another project that will be getting tons of traffic sent to it so that large lists can be formed from that traffic. These are things marketers typically use for their projects to warm up cold traffic.',
+                languages: ['HTML5','CSS3','Bootstrap','jQuery','Flexbox', 'SCSS', 'Node package handler','gulp']
+            },
+            {
+                id: '02',
+                project_name: 'Get Hitting Results Now (Sales Funnel)',
+                pic: '/img/projects/getting-hitting-results.jpg',
+                thumb:'/img/projects/getting-hitting-results-thumb.jpg',
+                website_url: 'http://gethittingperformancelabresultsnow.com/',
+                desc: 'This project was a Landing Page that I did for Hitting Perforamnce Lab for gathering a list of subscribers. I worked a lot with forms in this one in HTML5 and then used jQuery to pre populate data on a redirect to Click Bank after form submission. I utilized SCSS for variables to create better workflow, and bootstrap for my framework for user friendly/device mobility concerns. (scaling). This Landing Page will be one of many for this project that will be seeing tons of traffic and will win over thousands in revenue',
+                languages: ['HTML5','CSS3','Bootstrap','jQuery','Flexbox', 'SCSS', 'Node package handler','gulp']
+            },
+            {
+                id: '03',
+                project_name: 'Tulare County Child Abuse Prevention Council',
+                pic: '/img/projects/tulare-capc.jpg',
+                thumb:'/img/projects/tulare-capc-thumb.jpg',
+                website_url: 'http://tularecountycapc.org/',
+                desc: 'This project was a non-profit organization based on child abuse prevention that I designed and completed the full structure from the inside-out. I utilized the Beaver Builder plugin in Wordpress as well as did custom graphics, textures, and headings in photoshop for them. This was mainly done through the Beaver Builder visual editor which is a pain in its own. However using my mastery of CSS3 and PHP as well as child themeing was able to create this beautiful website mostly of my own power. Content is now being maintained by the non-profit and Edit LLC team I was under when I started this project.',
+                languages: ['HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','Flexbox','Beaver Builder Plugin', 'Photoshop','PHP']
+            },
+            {
+                id: '04',
                 project_name: 'Shift 3 Technologies',
                 pic: '/img/projects/shift3-technologies.jpg',
                 thumb:'/img/projects/shift3-technologies-thumb.jpg',
@@ -29,7 +56,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','Flexbox']
             },
             {
-                id: '02',
+                id: '05',
                 project_name: 'Little Leaf Tea',
                 pic: '/img/projects/little-leaf-tea.jpg',
                 thumb:'/img/projects/little-leaf-tea-thumbnail.jpg',
@@ -38,7 +65,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['PHP','HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','mySQL']
             },
             {
-                id: '03',
+                id: '06',
                 project_name: 'Red Wave Communications',
                 pic: '/img/projects/redwave-big.jpg',
                 thumb:'/img/projects/redwave-thumb.jpg',
@@ -47,7 +74,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['PHP','HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','mySQL']
             },
             {
-                id: '04',
+                id: '07',
                 project_name: 'Hitting Performance Labs',
                 pic: '/img/projects/hitting-performance-lab-big.jpg',
                 thumb: '/img/projects/hitting-performance-lab-thumb.jpg',
@@ -56,7 +83,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','SCSS','Custom Wordpress','jQuery']    
             },
             {
-                id: '05',
+                id: '08',
                 project_name: 'Etna Sample Site (Dev Challenge)',
                 pic: '/img/projects/etan-developer-challenge.jpg',
                 thumb: '/img/projects/etan-developer-challenge-thumb.jpg',
@@ -65,7 +92,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','SCSS','Bootstrap','jQuery','AngularJS']    
             },
             {
-                id: '06',
+                id: '09',
                 project_name: 'Windermere Gardens (Dev Challenge)',
                 pic: '/img/projects/windermere-gardens-large.jpg',
                 thumb:'/img/projects/windermere-gardens-thumb.jpg',
@@ -107,6 +134,7 @@ var app = angular.module('zenApp',['ngRoute']);
                     'Javascript',
                     'jQuery',
                     'Anuglar JS',
+                    'Meteor JS',
                     'Node JS',
                     'Custom Wordpress Templating',
                     'PHP',
