@@ -24,7 +24,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 project_name: 'Get Hitting Results Now (Video Sales Funnel)',
                 pic: '/img/projects/getting-hitting-results-video.jpg',
                 thumb:'/img/projects/getting-hitting-results-video-thumb.jpg',
-                website_url: 'https://zenkitties.github.io/hpl_video_funnel/',
+                website_url: 'http://gethittingperformancelabresultsnow.com/video-sales-v1/',
                 desc: 'This is the video sales funnel for the project below this one. This is meant to bring in traffic and send to the form. I used all of the same skills I used below including SCSS for easy variable usage utility for my CSS code. I also used bootstrap for framework/mobile friendliness. This is another project that will be getting tons of traffic sent to it so that large lists can be formed from that traffic. These are things marketers typically use for their projects to warm up cold traffic.',
                 languages: ['HTML5','CSS3','Bootstrap','jQuery','Flexbox', 'SCSS', 'Node package handler','gulp']
             },
