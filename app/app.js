@@ -21,6 +21,15 @@ var app = angular.module('zenApp',['ngRoute']);
         $scope.projects = [
             {
                 id: '01',
+                project_name: 'Ryans Run For Autism',
+                pic: '/img/projects/ryans-run.jpg',
+                thumb:'/img/projects/ryans-run-thumb.jpg',
+                website_url: 'http://ryansrunforautism.com',
+                desc: 'This was a fun little project I did for my buddy Ryan as I believe in his passion for supporting one of our local Autism Centers. Every year he does a run from San Francisco to Fresno to raise funds through donations to raise awareness and support for kids with Autism. Check out the site for more information. I used a custom wordpress theme for this one with custom HTML, CSS3, as well as photo editing in Photoshop',
+                languages: ['HTML5','CSS3','Custom Wordpress', 'Photoshop']
+            },
+            {
+                id: '02',
                 project_name: 'Get Hitting Results Now (Video Sales Funnel)',
                 pic: '/img/projects/getting-hitting-results-video.jpg',
                 thumb:'/img/projects/getting-hitting-results-video-thumb.jpg',
@@ -29,7 +38,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','Bootstrap','jQuery','Flexbox', 'SCSS', 'Node package handler','gulp']
             },
             {
-                id: '02',
+                id: '03',
                 project_name: 'Get Hitting Results Now (Sales Funnel)',
                 pic: '/img/projects/getting-hitting-results.jpg',
                 thumb:'/img/projects/getting-hitting-results-thumb.jpg',
@@ -38,7 +47,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','Bootstrap','jQuery','Flexbox', 'SCSS', 'Node package handler','gulp']
             },
             {
-                id: '03',
+                id: '04',
                 project_name: 'Tulare County Child Abuse Prevention Council',
                 pic: '/img/projects/tulare-capc.jpg',
                 thumb:'/img/projects/tulare-capc-thumb.jpg',
@@ -47,7 +56,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','Flexbox','Beaver Builder Plugin', 'Photoshop','PHP']
             },
             {
-                id: '04',
+                id: '05',
                 project_name: 'Shift 3 Technologies',
                 pic: '/img/projects/shift3-technologies.jpg',
                 thumb:'/img/projects/shift3-technologies-thumb.jpg',
@@ -56,7 +65,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','Flexbox']
             },
             {
-                id: '05',
+                id: '06',
                 project_name: 'Little Leaf Tea',
                 pic: '/img/projects/little-leaf-tea.jpg',
                 thumb:'/img/projects/little-leaf-tea-thumbnail.jpg',
@@ -65,7 +74,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['PHP','HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','mySQL']
             },
             {
-                id: '06',
+                id: '07',
                 project_name: 'Red Wave Communications',
                 pic: '/img/projects/redwave-big.jpg',
                 thumb:'/img/projects/redwave-thumb.jpg',
@@ -74,7 +83,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['PHP','HTML5','CSS3','Bootstrap','Custom Wordpress','jQuery','mySQL']
             },
             {
-                id: '07',
+                id: '08',
                 project_name: 'Hitting Performance Labs',
                 pic: '/img/projects/hitting-performance-lab-big.jpg',
                 thumb: '/img/projects/hitting-performance-lab-thumb.jpg',
@@ -83,7 +92,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','SCSS','Custom Wordpress','jQuery']    
             },
             {
-                id: '08',
+                id: '09',
                 project_name: 'Etna Sample Site (Dev Challenge)',
                 pic: '/img/projects/etan-developer-challenge.jpg',
                 thumb: '/img/projects/etan-developer-challenge-thumb.jpg',
@@ -92,7 +101,7 @@ var app = angular.module('zenApp',['ngRoute']);
                 languages: ['HTML5','CSS3','SCSS','Bootstrap','jQuery','AngularJS']    
             },
             {
-                id: '09',
+                id: '10',
                 project_name: 'Windermere Gardens (Dev Challenge)',
                 pic: '/img/projects/windermere-gardens-large.jpg',
                 thumb:'/img/projects/windermere-gardens-thumb.jpg',
